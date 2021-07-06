@@ -7,3 +7,7 @@ terraform{
 resource "google_compute_network" "vpc_network" {
   name = "jessy-vpc-network"
 }
+
+locals{
+    destroy = false
+}
