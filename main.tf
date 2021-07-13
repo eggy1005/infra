@@ -4,11 +4,11 @@ terraform{
         prefix = "terraform/state"
     }
 }
-resource "google_service_account" "myaccount" {
-  account_id   = "jessy-service-acount"
-  project      =  "g-951c0919"
-  display_name = "Jessy's Service account for Github action Pipeline"
-}
+# resource "google_service_account" "myaccount" {
+#   account_id   = "jessy-service-acount"
+#   project      =  "g-951c0919"
+#   display_name = "Jessy's Service account for Github action Pipeline"
+# }
 
 resource "google_compute_instance" "default" {
   name         = "test"
